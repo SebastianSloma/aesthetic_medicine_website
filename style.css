@@ -22,8 +22,12 @@ body {
 }
 .nav-item{
     font-weight: 700;
+   
     
 }
+
+
+
 
 /* End Navigation */
 
@@ -96,13 +100,23 @@ body {
 /* koniec sekcji o nas */
 
 /* Zabiegi */
-
+#treatments {
+	width: 100%;
+	height: 100vh;
+}
 /* Koniec Zabiegi */
 
 /* Galeria */
-
+#gallery {
+	width: 100%;
+	height: 100vh;
+}
 /* Koniec Galeria */
 
 
 /* Kontakt */
+#contact {
+	width: 100%;
+	height: 100vh;
+}
 /* Koniec kontakt */

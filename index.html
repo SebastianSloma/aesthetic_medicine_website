@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top " data-bs-theme="dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="#hero"><span class="logo">Medycyna</span>Estetyczna</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,23 +19,23 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">O NAS</a>
+                    <a class="nav-link active" aria-current="page" href="#about">O NAS</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">ZABIEGI</a>
+                    <a class="nav-link" href="#treatments">ZABIEGI</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">GALERIA</a>
+                    <a class="nav-link" href="#gallery">GALERIA</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">KONTAKT</a>
+                    <a class="nav-link" href="#contact">KONTAKT</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
     </header>
-    <section id="hero">
+    <section id="hero" class="img-fluid">
         <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
             <h1>Medycyna Estetyczna</h1>
             <h2>Medycyna Estetyczna Gabinety Zabiegi Lekarze</h2>
@@ -44,14 +44,22 @@
 
     </section>
     <main id="main">
+
     <section id="about">
         <div class="container text-center">
             <div class="row">
               <div class="col">
-                Column
+                <p>Doświadczenie zawodowe zdobywała podczas dwuletniego stażu w klinice w Brukseli, rocznego stażu w szpitalu w Koszycach oraz pracy w klinikach w Polsce.
+
+                  Z zakresu Medycyny estetycznej posiada liczne certyfikaty uzyskiwane w wiodących placówkach edukacyjnych w kraju. Stale poszerza swoją wiedzę i podnosi kwalifikację na szkoleniach indywidualnych i konferencjach polskich i zagranicznych.
+                  
+                  Wykonuje zabiegi z użyciem toksyny botulinowej, kwasu hialuronowego, polinukleotydów, biostymulatorów oraz nici liftingujących i rewitalizujących. Uważa, iż połączenie rożnego rodzaju zabiegów rewitalizujących i wolumetrycznych wykonywanych na rożnych poziomach skóry, w określonych odstępach czasowych, przynosi najlepsze i bardzo długotrwałe efekty.
+                  
+                  W swojej pracy stawia na długofalowe rezultaty poprzez budowanie relacji z pacjentem, tworzenie planów leczenia, dokładne wykonywanie zabiegów oraz wizyty kontrole. Stara się przekazać pacjentom, że medycyna estetyczna nie ma ich zmienić, a zatrzymać czas i naprawić niektóre niedoskonałości bądź też “błędy młodości”. Medycyna estetyczna daje możliwość zbliżenia się do swojego ideału piękna, a przede wszystkim ma za zadanie poprawić samopoczucie pacjenta.</p>
+                  
               </div>
               <div class="col">
-                Column
+                <img src="image\IMG-20230411-WA0014.jpg" class="img-fluid" alt="">
               </div>
             
             </div>
@@ -60,20 +68,59 @@
     </section>
 
     <section id="treatments">
-
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="gallery">
 
     </section>
-    <section id="contact"><
-        /section>
+    <section id="contact">
+
+    </section>
 </main>
 <footer>
 
 </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
     <script src="script.js"></script>
 </body>
 </html>
