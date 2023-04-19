@@ -44,6 +44,10 @@ a {
 	flex: 1 1 25rem;
 }
 
+.column{
+	display: grid;
+}
+
 .container {
 	max-width: 90%;
 	margin: 0 auto;
@@ -136,6 +140,7 @@ p {
 .hero-img img{
 	max-height: 600px;
 	object-fit: contain;
+	/* height: 500px; */
 }
 /* END HERO SECTION */
 
