@@ -146,7 +146,26 @@ p {
 /* END HERO SECTION */
 
 /* GALLERY */
+.gallery{
+	padding: 2rem 0
+}
+.heading{
+	text-align: center;
+	padding-bottom: 2rem;
+	max-width: 500px;
 
+	margin: 0 auto;
+}
+.gallery-slider{
+	padding: 0 4rem;
+}
+.swiper-img img{
+	height: 280px;
+	object-fit: cover;
+}
+h2{
+	font-size: 40px;
+}
 /* END GALLERY */
 
 /* Media queries */
