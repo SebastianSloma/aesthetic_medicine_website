@@ -13,11 +13,7 @@ const swiper = new Swiper('.gallery-slider', {
 	slidesPerView:1,
 	spaceBetween: 70,
   
-	// If we need pagination
-	pagination: {
-	  el: '.swiper-pagination',
-	  clickable: true,
-	},
+
   
 	// Navigation arrows
 	navigation: {
