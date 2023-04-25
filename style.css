@@ -66,6 +66,7 @@ header {
 .toggleMenu {
 	display: none;
 }
+
 nav,
 nav ul {
 	align-items: center;
@@ -102,7 +103,6 @@ nav ul a:active {
 	color: var(--color-2);
 	border-color: var(--color-2);
 	background: var(--color-3);
-	
 }
 /* End Page Button */
 
@@ -110,9 +110,28 @@ nav ul a:active {
 .hero {
 	flex-wrap: wrap-reverse;
 	padding: 2rem 0;
+	max-width: 100%;
 }
+.hero-img {
+	position: relative;
+	height: 100vh;
+	background-image: linear-gradient(
+			45deg,
+			rgba(113, 21, 72, 0.189),
+			rgba(244, 0, 0, 0.29)
+		),
+		url(image/medycyna-estetyczna.webp);
+
+		
+	background-color: rgba(0, 0, 0, 0.6);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
 .hero-content {
 	align-self: center;
+	text-align: center;
 }
 h1 {
 	font-weight: 700;
@@ -127,34 +146,18 @@ p {
 	padding: 1.5rem 0;
 }
 
-.hero-img::after {
-	content: '';
-	position: absolute;
-	inset: 0;
-	width: 85%;
-	height: 100%;
-	border: 0.25rem dashed var(--color-2);
-	border-radius: 50%;
-	transform: rotate(-5deg);
-	z-index: -1;
-}
-.hero-img img {
-	max-height: 600px;
-	object-fit: contain;
-	/* height: 500px; */
-}
 /* END HERO SECTION */
 
 /* ABOUT SECTION */
-.about{
+.about {
 	padding: 2rem 0;
 }
-.about-img img{
+.about-img img {
 	max-height: 620px;
 	object-fit: cover;
 	border-radius: 0 0 50% 0;
 }
-.about-content{
+.about-content {
 	align-self: center;
 	padding: 0 2rem;
 }
@@ -164,28 +167,27 @@ p {
 /* END ABOUT SECTION */
 
 /* GALLERY */
-.gallery{
-	padding: 2rem 0
+.gallery {
+	padding: 2rem 0;
 }
-.heading{
+.heading {
 	text-align: center;
 	padding-bottom: 2rem;
 	max-width: 500px;
 
 	margin: 0 auto;
 }
-.gallery-slider{
+.gallery-slider {
 	padding: 0 4rem;
 }
-.swiper-img img{
+.swiper-img img {
 	height: 280px;
 	object-fit: cover;
 }
-h2{
+h2 {
 	font-size: 40px;
 }
 /* END GALLERY */
-
 
 /* Media queries */
 @media (min-width: 1300px) {
