@@ -5,19 +5,51 @@
 *::before {
 	box-sizing: border-box;
 	font-weight: 400;
-	color: var(--color-2);
+
 	margin: 0;
 	padding: 0;
 }
 
+
 :root {
-	--color-1: #262621;
-	--color-2: #f2e2ce;
-	--color-3: #bf3f57;
+	--color-primary: #4682b4;
+	--color-danger: #dc143c;
+	--color-success: #32cd32;
+	--color-warning: #ff8c00;
+	--color-white: #fff;
+	--color-info-dark: #848282;
+	--color-info-light: rgba(220, 214, 214);
+	--color-dark: #353232;
+	--color-light: rgba(132, 139, 200, 0.18);
+
+	--color-primary-variant: #4169e1;
+	--color-dark-variant: #778899;
+	--color-background: #f6f6f9;
+
+	--card-border-radius: 2rem;
+	--border-radius-1: 0.4rem;
+	--border-radius-2: 0.8rem;
+	--border-radius-3: 1.2rem;
+
+	--card-padding: 1.8rem;
+	--padding-1: 1.2rem;
+
+	--box-shadow: 0 2rem 3rem var(--color-light);
 }
+/* Dark Mode Var */
+.dark-theme-variables {
+	--color-background: #181a1e;
+	--color-white: #202528;
+	--color-dark: #edeffd;
+	--color-dark-variant: #a3bdcc;
+	--color-light: rgba(0, 0, 0, 0.4);
+	--box-shadow: 0 2rem 3rem var(--color-light);
+}
+
 body {
 	font-family: 'Cormorant Garamond', sans-serif;
-	background: var(--color-1);
+	background: var(--color-background);
+	color: var(--color-dark);
 	user-select: none;
 }
 img {
@@ -30,6 +62,7 @@ ul {
 }
 a {
 	display: inline-block;
+	color: var(--color-dark);
 	text-decoration: none;
 	transition: 0.5s ease-in-out;
 }
@@ -82,18 +115,46 @@ nav ul a {
 
 nav ul a:hover,
 nav ul a:active {
-	color: var(--color-3);
+	color: var(--color-primary);
 }
 /* End Navigation */
+
+/* DARK LIGHT MODE */
+.theme-toggler {
+	background: var(--color-light);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 1.6rem;
+	width: 4.2rem;
+	cursor: pointer;
+	border-radius: var(--border-radius-1);
+}
+
+.theme-toggler span {
+	font-size: 1.2rem;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.theme-toggler span.active {
+	background: var(--color-primary);
+	color: white;
+	border-radius: var(--border-radius-1);
+}
+/* END DARK LIGHT MODE */
 /* Page Button */
 .page-btn {
 	cursor: pointer;
 	font-weight: 500;
 	font-size: 1.25rem;
-	color: var(--color-3);
+	color: var(--color-primary);
 	text-transform: uppercase;
 	background: transparent;
-	border: 1px solid var(--color-3);
+	border: 1px solid var(--color-primary);
 	padding: 0.4rem 1.5rem;
 	border-radius: 10px;
 	transition: 0.5s ease-in-out;
@@ -101,9 +162,9 @@ nav ul a:active {
 
 .page-btn:hover,
 .page-btn:active {
-	color: var(--color-2);
-	border-color: var(--color-2);
-	background: var(--color-3);
+	color: var(--color-info-dark);
+	border-color: var(--color-info-dark);
+	background: var(--color-background);
 }
 /* End Page Button */
 
@@ -141,7 +202,7 @@ h1 {
 }
 p {
 	font-size: clamp(1rem, 5vw, 1.25rem);
-	color: var(--color-3);
+	color: var(--color-dark-variant);
 }
 .hero-content p {
 	padding: 1.5rem 0;
@@ -232,13 +293,7 @@ h2 {
 	align-items: center;
 	gap: 2rem;
 }
-.media-links a{
-	transition: background 0.5s ease-in-out;
-}
-.media-links a:hover{
-	background: var(--color-2);
-	border-radius: 8px;
-}
+
 
 footer h4{
 	font-size: 1.5rem;
@@ -252,14 +307,14 @@ footer ul a{
 	text-transform: capitalize;
 }
 footer ul a:hover{
-	color: var(--color-3);
+	color: var(--color-primary-variant);
 }
 footer ul+p{
 	padding-top: 1.5rem;
 }
 .copy-right{
 	font: 0.9rem;
-	color: var(--color-2);
+	color: var(--color-dark);
 	text-align: center;
 }
 footer a{
