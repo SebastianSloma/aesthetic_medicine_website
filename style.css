@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 *,
 *::after,
@@ -47,7 +47,7 @@
 }
 
 body {
-	font-family: 'Cormorant Garamond', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	background: var(--color-background);
 	color: var(--color-dark);
 	user-select: none;
@@ -85,6 +85,9 @@ a {
 .container {
 	max-width: 90%;
 	margin: 0 auto;
+}
+.d-none {
+	display: none;
 }
 
 /* Navigation */
@@ -252,6 +255,74 @@ h2 {
 /* END GALLERY */
 
 /* TREATMENTS */
+
+/* Explore Art Section */
+.tags-filter {
+	position: relative;
+	align-items: center;
+	justify-content: space-between;
+	gap: 2em;
+	padding-top: 2em;
+}
+.tags {
+	align-items: center;
+	gap: 16px;
+	padding: 10px 0;
+}
+
+.tags p {
+	text-transform: capitalize;
+}
+.explore-art p {
+	color: var(--color-dark);
+}
+.explore-cards {
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 30px;
+	padding: 2em 0;
+}
+/* End Explore Art Section */
+
+/* Filter Option */
+.filter-body {
+	position: relative;
+}
+.toggleFilter {
+	gap: 10px;
+}
+.toggleFilter p {
+	white-space: nowrap;
+}
+.toggleFilter img {
+	width: 20px;
+	background: white;
+}
+.filterOptions {
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	min-height: 0;
+	opacity: 0;
+	transform: scale(0);
+}
+.filterOptions.active {
+	min-height: 100%;
+	opacity: 1;
+	transform: scale(1);
+
+	border-radius: 8px;
+	text-align: center;
+}
+.filterOptions li {
+	margin-top: 10px;
+}
+.explore-cards .card-bid div:nth-last-of-type(1) {
+	max-width: fit-content;
+}
+/* End Filter Option */
+
+
+
 .treatments{
 	padding: 2rem 0;
 }
