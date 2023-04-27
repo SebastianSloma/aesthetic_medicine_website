@@ -427,6 +427,7 @@ footer a{
 		align-items: center;
 		flex-direction: column;
 		gap: 1rem;
+		
 		min-height: 0;
 		opacity: 0;
 		transform: scale(0);
@@ -436,7 +437,7 @@ footer a{
 		position: fixed;
 		min-height: 100%;
 		opacity: 1;
-		background: var(--color-1);
+		background: var(--color-dark-variant);
 		z-index: 999;
 		transform: scale(1);
 	}

@@ -38,6 +38,7 @@ const swiper2 = new Swiper('.treatments-slider', {
 	slidesPerView: 1,
 	spaceBetween: 10,
 	// loop: true,
+	
 	navigation: {
 		nextEl: '.treatments-slider .swiper-button-next',
 		prevEl: '.treatments-slider .swiper-button-prev',
