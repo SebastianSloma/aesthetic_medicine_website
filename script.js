@@ -37,7 +37,7 @@ const swiper = new Swiper('.gallery-slider', {
 const swiper2 = new Swiper('.treatments-slider', {
 	slidesPerView: 1,
 	spaceBetween: 10,
-	loop: true,
+	// loop: true,
 	navigation: {
 		nextEl: '.treatments-slider .swiper-button-next',
 		prevEl: '.treatments-slider .swiper-button-prev',
@@ -104,41 +104,47 @@ filtersCat.forEach((filter) => {
 		);
 	});
 });
-
-// filter by old date
-
-const filterOptionOld = document.querySelector(
-	".filterOptions li[data-filter='old']"
-);
-
-filterOptionOld.addEventListener('click', function () {
-	activeCards = document.querySelectorAll('.explore-cards .card:not(.d-none)');
-	activeCardNew = Array.from(activeCards);
-	activeCardNew.sort(function (a, b) {
-		return new Date(a.dataset.date) - new Date(b.dataset.date);
-	});
-	activeCardNew.forEach((card) => {
-		card.parentNode.appendChild(card);
-	});
-	toggleFil();
-});
-
-// filter by newdate
-
-const filterOptionNew = document.querySelector(
-	".filterOptions li[data-filter='new']"
-);
-
-filterOptionNew.addEventListener('click', function () {
-	activeCards = document.querySelectorAll('.explore-cards .card:not(.d-none)');
-	activeCardNew = Array.from(activeCards);
-	activeCardNew.sort(function (a, b) {
-		return new Date(b.dataset.date) - new Date(a.dataset.date);
-	});
-	activeCardNew.forEach((card) => {
-		card.parentNode.appendChild(card);
-	});
-	toggleFil();
-});
-
 // END FILTER TREATMENTS
+
+// filter gallery
+// FILTER TREATMENTS
+
+
+//filter cards
+const filtersCat2 = document.querySelectorAll('.filter-btn2');
+
+let activeCards2 = document.querySelectorAll(
+	'.explore-treatments .imag:not(.d-none)'
+);
+
+// filter cards by category
+filtersCat2.forEach((filter) => {
+	filter.addEventListener('click', function () {
+		filtersCat2.forEach((filter) => {
+			filter.classList.remove('active');
+		});
+		this.classList.add('active');
+		const category2 = this.dataset.cat;
+		const cards2 = document.querySelectorAll('.explore-treatments .imag');
+		cards2.forEach((card) => {
+			if (category2 === card.dataset.type || category2 === 'all') {
+				card.classList.remove('d-none');
+			} else {
+				card.classList.add('d-none');
+			}
+		});
+		const cardsCount2 = document.querySelectorAll(
+			'.explore-treatments .imag:not(.d-none)'
+		);
+		if (cardsCount2.length === 0) {
+			document.querySelector('.no-results').classList.remove('d-none');
+		} else {
+			document.querySelector('.no-results').classList.add('d-none');
+		}
+		activeCards2 = document.querySelectorAll(
+			'.explore-treatments .imag:not(.d-none)'
+		);
+	});
+});
+
+// end filter gallery
