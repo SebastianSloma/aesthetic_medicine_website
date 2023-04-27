@@ -64,3 +64,43 @@ themeToggler.addEventListener('click', () => {
 	themeToggler.querySelector('span:nth-child(1)').classList.toggle('active');
 	themeToggler.querySelector('span:nth-child(2)').classList.toggle('active');
 });
+
+// FILTER TREATMENTS
+
+//filter cards
+const filtersCat = document.querySelectorAll('.filter-btn');
+
+let activeCards = document.querySelectorAll(
+	'.explore-treatments .swiper-slide:not(.d-none)'
+);
+
+// filter cards by category
+filtersCat.forEach((filter) => {
+	filter.addEventListener('click', function () {
+		filtersCat.forEach((filter) => {
+			filter.classList.remove('active');
+		});
+		this.classList.add('active');
+		const category = this.dataset.cat;
+		const cards = document.querySelectorAll('.explore-treatments .swiper-slide');
+		cards.forEach((card) => {
+			if (category === card.dataset.type || category === 'all') {
+				card.classList.remove('d-none');
+			} else {
+				card.classList.add('d-none');
+			}
+		});
+		const cardsCount = document.querySelectorAll(
+			'.explore-treatments .swiper-slide:not(.d-none)'
+		);
+		if (cardsCount.length === 0) {
+			document.querySelector('.no-results').classList.remove('d-none');
+		} else {
+			document.querySelector('.no-results').classList.add('d-none');
+		}
+		activeCards = document.querySelectorAll(
+			'.explore-treatments .swiper-slide:not(.d-none)'
+		);
+	});
+});
+// END FILTER TREATMENTS

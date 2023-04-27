@@ -129,9 +129,31 @@
 				<h2>Zabiegi</h2>
 				<p>Zabiegi medycyna estetyczna treatments</p>
 			</div>
+
+			<div class="tags-filter row">
+				<div class="tags row">
+					<div class="page-btn filter-btn active" data-cat="all">
+						<p>All</p>
+					</div>
+					<div class="page-btn filter-btn" data-cat="treatments1">
+						<p>Zabieg 1</p>
+					</div>
+					<div class="page-btn filter-btn" data-cat="treatments2">
+						<p>Zabieg 2</p>
+					</div>
+					<div class="page-btn filter-btn" data-cat="treatments3">
+						<p>Zabieg 3</p>
+					</div>
+					<div class="page-btn filter-btn" data-cat="treatments4">
+						<p>Zabieg 4</p>
+					</div>
+				</div>
+				
+			</div>
+
 			<div class="swiper mySwiper treatments-slider">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
+				<div class="swiper-wrapper explore-treatments">
+					<div class="swiper-slide" data-type="treatments1">
 						<div class="swiper-img">
 							<img src="/image/treatments.jpg" alt="" />
 						</div>
@@ -140,7 +162,7 @@
 							<p>Opis zabiegu</p>
 						</div>
 					</div>
-					<div class="swiper-slide">
+					<div class="swiper-slide" data-type="treatments1">
 						<div class="swiper-img">
 							<img src="/image/treatments.jpg" alt="" />
 						</div>
@@ -149,7 +171,7 @@
 							<p>Opis zabiegu</p>
 						</div>
 					</div>
-					<div class="swiper-slide">
+					<div class="swiper-slide" data-type="treatments2">
 						<div class="swiper-img">
 							<img src="/image/treatments.jpg" alt="" />
 						</div>
@@ -158,7 +180,7 @@
 							<p>Opis zabiegu</p>
 						</div>
 					</div>
-					<div class="swiper-slide">
+					<div class="swiper-slide" data-type="treatments2">
 						<div class="swiper-img">
 							<img src="/image/treatments.jpg" alt="" />
 						</div>
@@ -167,7 +189,7 @@
 							<p>Opis zabiegu</p>
 						</div>
 					</div>
-					<div class="swiper-slide">
+					<div class="swiper-slide" data-type="treatments3">
 						<div class="swiper-img">
 							<img src="/image/treatments.jpg" alt="" />
 						</div>
@@ -176,7 +198,7 @@
 							<p>Opis zabiegu</p>
 						</div>
 					</div>
-					<div class="swiper-slide">
+					<div class="swiper-slide" data-type="treatments4">
 						<div class="swiper-img">
 							<img src="/image/treatments.jpg" alt="" />
 						</div>
@@ -185,7 +207,7 @@
 							<p>Opis zabiegu</p>
 						</div>
 					</div>
-					<div class="swiper-slide">
+					<div class="swiper-slide" data-type="treatments3">
 						<div class="swiper-img">
 							<img src="/image/treatments.jpg" alt="" />
 						</div>
@@ -194,7 +216,7 @@
 							<p>Opis zabiegu</p>
 						</div>
 					</div>
-					<div class="swiper-slide">
+					<div class="swiper-slide" data-type="treatments4">
 						<div class="swiper-img">
 							<img src="/image/treatments.jpg" alt="" />
 						</div>
@@ -203,7 +225,7 @@
 							<p>Opis zabiegu</p>
 						</div>
 					</div>
-					<div class="swiper-slide">
+					<div class="swiper-slide" data-type="treatments3">
 						<div class="swiper-img">
 							<img src="/image/treatments.jpg" alt="" />
 						</div>
@@ -212,7 +234,7 @@
 							<p>Opis zabiegu</p>
 						</div>
 					</div>
-					<div class="swiper-slide">
+					<div class="swiper-slide" data-type="treatments1">
 						<div class="swiper-img">
 							<img src="/image/treatments.jpg" alt="" />
 						</div>
@@ -220,6 +242,10 @@
 							<h4>Zabieg 10</h4>
 							<p>Opis zabiegu</p>
 						</div>
+					</div>
+					<div class="no-results d-none">
+						<h3>No results found</h3>
+						<p>Try to change the filters</p>
 					</div>
 					
 				</div>
