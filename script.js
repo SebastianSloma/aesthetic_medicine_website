@@ -107,4 +107,6 @@ filtersCat.forEach((filter) => {
 });
 // END FILTER TREATMENTS
 
+// COURSE TOGGLE
 
+// END COURSE TOGGLE
