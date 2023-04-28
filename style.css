@@ -347,9 +347,50 @@ h2 {
 	white-space: nowrap;
 	text-overflow: ellipsis;
 }
+
 /* END TREATMENTS */
 
-
+/* CONTACT SECTION*/
+.form{
+	background: var(--color-background);
+	box-shadow: var(--box-shadow);
+	padding: 2rem 0;
+}
+input, textarea{
+	font-size: 18px;
+	outline: 0;
+	border: 1px solid var(--color-primary);
+	background: var(--color-background);
+	padding: 1rem;
+	width: 100%;
+	border-radius: 8px;
+}
+.form form{
+	gap: 1rem;
+	padding-top: 2rem;
+}
+.contact-content img{
+	height: 30px;
+	width: 30px;
+}
+.contact-details{
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+.contact-details>*{
+	flex: 1 1 12em;
+}
+.contact-details a p{
+	padding-top: 1rem;
+}
+.contact-details a{
+	fill: var(--color-primary-variant);
+	text-align: center;
+}
+.contact-details a:hover{
+	fill: var(--color-primary);
+}
+/* END CONTACT SECTION*/
 
 /* FOOTER */
 .footer{
