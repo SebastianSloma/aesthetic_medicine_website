@@ -23,10 +23,10 @@
 			<button class="toggleMenu" onclick="toggleMenu()"></button>
 			<nav class="navigation row">
 				<ul class="row">
-					<li><a href="" class="active">O Nas</a></li>
-					<li><a href="">Zabiegi</a></li>
-					<li><a href="">Galeria</a></li>
-					<li><a href="">Kontakt</a></li>
+					<li><a href="#about" class="active">O Nas</a></li>
+					<li><a href="#treatments">Zabiegi</a></li>
+					<li><a href="#gallery">Galeria</a></li>
+					<li><a href="#contact">Kontakt</a></li>
 					<div class="theme-toggler">
 						<span class="material-symbols-sharp active"> light_mode </span>
 						<span class="material-symbols-sharp"> dark_mode </span>
@@ -54,7 +54,7 @@
 		<!-- END HERO SECTION -->
 		
 		<!-- About -->
-		<section class="about row flex">
+		<section id="about" class="about row flex">
 			<div class="about-img circle"><img src="image/omnie.jpg" alt=""></div>
 			<div class="about-content">
 				<h4>O Mnie</h4>
@@ -126,7 +126,7 @@
 		<!-- ZABIEGI -->
 
 <!-- ZABIEGI SECTION -->
-<section class="explore-art container">
+<section id="treatments" class="explore-art container">
 	<h2>Zabiegi Lub Galeria z filtrami</h2>
 	<div class="tags-filter row">
 		<div class="tags row">
@@ -271,140 +271,11 @@
 </section>
 <!-- END Zabiegi SECTION -->
 
-		<section class="treatments container">
-			<div class="heading">
-				<h2>Zabiegi</h2>
-				<p>Zabiegi medycyna estetyczna treatments</p>
-			</div>
-
-			<div class="tags-filter row">
-				<div class="tags row">
-					<div class="page-btn filter-btn2 active" data-cat="all">
-						<p>All</p>
-					</div>
-					<div class="page-btn filter-btn2" data-cat="treatments1">
-						<p>Zabieg 1</p>
-					</div>
-					<div class="page-btn filter-btn2" data-cat="treatments2">
-						<p>Zabieg 2</p>
-					</div>
-					<div class="page-btn filter-btn2" data-cat="treatments3">
-						<p>Zabieg 3</p>
-					</div>
-					<div class="page-btn filter-btn2" data-cat="treatments4">
-						<p>Zabieg 4</p>
-					</div>
-				</div>
-				
-			</div>
-
-			<div class="swiper mySwiper treatments-slider">
-				<div class="swiper-wrapper explore-treatments">
-					<div class="swiper-slide imag" data-type="treatments1">
-						<div class="swiper-img">
-							<img src="/image/treatments.jpg" alt="" />
-						</div>
-						<div class="swiper-content">
-							<h4>Zabieg 1</h4>
-							<p>Opis zabiegu</p>
-						</div>
-					</div>
-					<div class="swiper-slide imag" data-type="treatments1">
-						<div class="swiper-img">
-							<img src="/image/treatments.jpg" alt="" />
-						</div>
-						<div class="swiper-content">
-							<h4>Zabieg 2</h4>
-							<p>Opis zabiegu</p>
-						</div>
-					</div>
-					<div class="swiper-slide imag" data-type="treatments2">
-						<div class="swiper-img">
-							<img src="/image/treatments.jpg" alt="" />
-						</div>
-						<div class="swiper-content">
-							<h4>Zabieg 3</h4>
-							<p>Opis zabiegu</p>
-						</div>
-					</div>
-					<div class="swiper-slide imag" data-type="treatments2">
-						<div class="swiper-img">
-							<img src="/image/treatments.jpg" alt="" />
-						</div>
-						<div class="swiper-content">
-							<h4>Zabieg 4</h4>
-							<p>Opis zabiegu</p>
-						</div>
-					</div>
-					<div class="swiper-slide imag" data-type="treatments3">
-						<div class="swiper-img">
-							<img src="/image/treatments.jpg" alt="" />
-						</div>
-						<div class="swiper-content">
-							<h4>Zabieg 5</h4>
-							<p>Opis zabiegu</p>
-						</div>
-					</div>
-					<div class="swiper-slide imag" data-type="treatments4">
-						<div class="swiper-img">
-							<img src="/image/treatments.jpg" alt="" />
-						</div>
-						<div class="swiper-content">
-							<h4>Zabieg 6</h4>
-							<p>Opis zabiegu</p>
-						</div>
-					</div>
-					<div class="swiper-slide imag" data-type="treatments3">
-						<div class="swiper-img">
-							<img src="/image/treatments.jpg" alt="" />
-						</div>
-						<div class="swiper-content">
-							<h4>Zabieg 7</h4>
-							<p>Opis zabiegu</p>
-						</div>
-					</div>
-					<div class="swiper-slide imag" data-type="treatments4">
-						<div class="swiper-img">
-							<img src="/image/treatments.jpg" alt="" />
-						</div>
-						<div class="swiper-content">
-							<h4>Zabieg 8</h4>
-							<p>Opis zabiegu</p>
-						</div>
-					</div>
-					<div class="swiper-slide imag" data-type="treatments3">
-						<div class="swiper-img">
-							<img src="/image/treatments.jpg" alt="" />
-						</div>
-						<div class="swiper-content">
-							<h4>Zabieg 9</h4>
-							<p>Opis zabiegu</p>
-						</div>
-					</div>
-					<div class="swiper-slide imag" data-type="treatments1">
-						<div class="swiper-img">
-							<img src="/image/treatments.jpg" alt="" />
-						</div>
-						<div class="swiper-content">
-							<h4>Zabieg 10</h4>
-							<p>Opis zabiegu</p>
-						</div>
-					</div>
-					<div class="no-results d-none">
-						<h3>No results found</h3>
-						<p>Try to change the filters</p>
-					</div>
-					
-				</div>
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-button-next"></div>
-				
-			</div>
-		</section>
+		
 		<!-- END ZABIEGI -->
 
 		<!-- GALERIA -->
-		<section class="gallery container">
+		<section id="gallery" class="gallery container">
 			<div class="heading">
 				<h2>Galeria</h2>
 			</div>
@@ -484,7 +355,28 @@
 		<!-- END GALERIA -->
 
 		<!-- KONTAKT -->
-
+<section id="contact" class="contact">
+<div class="container">
+	
+	<div class="column row">
+		<h3>Kontakt</h3>
+		<p>telefon</p>
+		<div class="form-element">
+			<input type="text" class="form-control" placeholder="Imię i nazwisko">
+		</div>
+		<div class="form-element">
+			<input type="email" class="form-control" placeholder="Email">
+		</div>
+		<div class="form-element">
+			<textarea name="" class="form-control" cols="" rows="5" placeholder="Wiadomość"></textarea>
+		</div>
+		<button class="page-btn">Wyślij wiadomość</button>
+	</div>
+	<div class="column row">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d311602.85666285345!2d16.310815068485276!3d52.39947500429826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470444d2ece10ab7%3A0xa4ea31980334bfd1!2zUG96bmHFhA!5e0!3m2!1spl!2spl!4v1682668360726!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+</div>
+</section>
 		<!-- END KONTAKT -->
 	</main>
 	<!-- Footer -->
