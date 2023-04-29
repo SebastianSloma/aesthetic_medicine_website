@@ -373,9 +373,10 @@ input, textarea{
 	gap: 1rem;
 	padding-top: 2rem;
 }
-.contact-content img{
+.heading img{
 	height: 30px;
 	width: 30px;
+	
 }
 .contact-details{
 	flex-wrap: wrap;
